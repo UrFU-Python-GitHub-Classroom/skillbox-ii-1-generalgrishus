@@ -2,6 +2,7 @@
 
 
 def is_palindrome(s: str) -> bool:
-    """Реализовать функцию, возвращающую True, 
-    если строка палиндром, иначе false"""
+    reversed_str = ''.join(reversed(s))
+    if (s == reversed_str):
+        return True
     return False
